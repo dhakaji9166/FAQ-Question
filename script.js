@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded',  () => {
+document.addEventListener('DOMContentLoaded', function() {
     const faqQuestions = document.querySelectorAll('.faq_question');
 
-    faqQuestions.forEach(faq => {
-        faq.addEventListener('click',  ()=> {
+    faqQuestions.forEach(function(faq) {
+        faq.addEventListener('click', function() {
             const main = this.nextElementSibling;
 
             if (main.style.display === 'block') {
@@ -19,3 +19,4 @@ document.addEventListener('DOMContentLoaded',  () => {
         });
     });
 });
+
